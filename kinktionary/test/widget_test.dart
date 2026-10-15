@@ -12,11 +12,36 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:kinktionary/data_store.dart';
 import 'package:kinktionary/main.dart';
 import 'package:kinktionary/models.dart';
+import 'package:kinktionary/screens/glossary_screen.dart';
 import 'package:kinktionary/screens/home_shell.dart';
 import 'package:kinktionary/screens/profile_screen.dart';
 import 'package:kinktionary/widgets/pattern_background.dart';
 
 void main() {
+  testWidgets('Glossary can sort bookmarked definitions first',
+      (WidgetTester tester) async {
+    final store = DataStore()
+      ..terms = [
+        const Term(id: 'z', name: 'Zulu', category: 'Test', short: 'Zulu'),
+        const Term(id: 'a', name: 'Alpha', category: 'Test', short: 'Alpha'),
+        const Term(id: 'b', name: 'Bravo', category: 'Test', short: 'Bravo'),
+      ];
+    await store.toggleBookmark('b');
+    await tester.pumpWidget(
+      MaterialApp(home: Scaffold(body: GlossaryScreen(store: store))),
+    );
+
+    List<String> termNames() => tester
+        .widgetList<TermTile>(find.byType(TermTile))
+        .map((tile) => tile.term.name)
+        .toList();
+
+    expect(termNames(), ['Alpha', 'Bravo', 'Zulu']);
+    await tester.tap(find.text('Bookmarks first'));
+    await tester.pump();
+    expect(termNames(), ['Bravo', 'Alpha', 'Zulu']);
+  });
+
   testWidgets('App launches to the age gate', (WidgetTester tester) async {
     SharedPreferences.setMockInitialValues({});
 

@@ -15,6 +15,7 @@ class GlossaryScreen extends StatefulWidget {
 class _GlossaryScreenState extends State<GlossaryScreen> {
   String query = '';
   String? category;
+  bool bookmarksFirst = false;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +23,14 @@ class _GlossaryScreenState extends State<GlossaryScreen> {
       listenable: widget.store,
       builder: (context, _) {
         final results = widget.store.search(query, category: category);
+        if (bookmarksFirst) {
+          results.sort((a, b) {
+            final bookmarkOrder = (widget.store.isBookmarked(b.id) ? 1 : 0)
+                .compareTo(widget.store.isBookmarked(a.id) ? 1 : 0);
+            if (bookmarkOrder != 0) return bookmarkOrder;
+            return a.name.toLowerCase().compareTo(b.name.toLowerCase());
+          });
+        }
         return SafeArea(
           child: Column(
             children: [
@@ -45,6 +54,15 @@ class _GlossaryScreenState extends State<GlossaryScreen> {
                         label: const Text('All'),
                         selected: category == null,
                         onSelected: (_) => setState(() => category = null),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: ChoiceChip(
+                        label: const Text('Bookmarks first'),
+                        selected: bookmarksFirst,
+                        onSelected: (selected) =>
+                            setState(() => bookmarksFirst = selected),
                       ),
                     ),
                     for (final c in widget.store.categories)
