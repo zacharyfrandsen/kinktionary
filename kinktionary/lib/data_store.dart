@@ -290,15 +290,24 @@ class DataStore extends ChangeNotifier {
     return null;
   }
 
-  List<Term> search(String query, {String? category}) {
+  List<Term> search(String query,
+      {String? category, bool bookmarkedFirst = false}) {
     final q = query.trim().toLowerCase();
-    return terms.where((t) {
+    final results = terms.where((t) {
       if (category != null && t.category != category) return false;
       if (q.isEmpty) return true;
       return t.name.toLowerCase().contains(q) ||
           t.short.toLowerCase().contains(q) ||
           (t.details ?? '').toLowerCase().contains(q);
     }).toList();
+    if (bookmarkedFirst) {
+      // Stable partition: keeps the existing alphabetical order in each group.
+      return [
+        ...results.where((t) => _bookmarks.contains(t.id)),
+        ...results.where((t) => !_bookmarks.contains(t.id)),
+      ];
+    }
+    return results;
   }
 
   // ---- age gate ----

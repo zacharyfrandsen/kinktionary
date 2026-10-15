@@ -15,13 +15,15 @@ class GlossaryScreen extends StatefulWidget {
 class _GlossaryScreenState extends State<GlossaryScreen> {
   String query = '';
   String? category;
+  bool bookmarkedFirst = false;
 
   @override
   Widget build(BuildContext context) {
     return ListenableBuilder(
       listenable: widget.store,
       builder: (context, _) {
-        final results = widget.store.search(query, category: category);
+        final results = widget.store.search(query,
+            category: category, bookmarkedFirst: bookmarkedFirst);
         return SafeArea(
           child: Column(
             children: [
@@ -39,6 +41,15 @@ class _GlossaryScreenState extends State<GlossaryScreen> {
                   scrollDirection: Axis.horizontal,
                   padding: const EdgeInsets.symmetric(horizontal: 12),
                   children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: FilterChip(
+                        avatar: const Icon(Icons.bookmark, size: 18),
+                        label: const Text('Bookmarked first'),
+                        selected: bookmarkedFirst,
+                        onSelected: (v) => setState(() => bookmarkedFirst = v),
+                      ),
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 4),
                       child: ChoiceChip(

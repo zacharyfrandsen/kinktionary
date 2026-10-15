@@ -246,4 +246,19 @@ void main() {
     await tester.pump();
     expect(find.byTooltip('Safety & consent'), findsNothing);
   });
+
+  test('Search can list bookmarked terms first', () async {
+    SharedPreferences.setMockInitialValues({});
+    final store = DataStore();
+    await store.loadPreferences();
+    store.terms = const [
+      Term(id: 'a', name: 'Alpha', category: 'C', short: 's'),
+      Term(id: 'b', name: 'Beta', category: 'C', short: 's'),
+      Term(id: 'c', name: 'Gamma', category: 'C', short: 's'),
+    ];
+    await store.toggleBookmark('c');
+    expect(store.search('').map((t) => t.id), ['a', 'b', 'c']);
+    expect(store.search('', bookmarkedFirst: true).map((t) => t.id),
+        ['c', 'a', 'b']);
+  });
 }
