@@ -22,9 +22,9 @@ void main() {
       (WidgetTester tester) async {
     final store = DataStore()
       ..terms = [
-        const Term(id: 'z', name: 'Zulu', category: 'Test', short: 'Zulu'),
         const Term(id: 'a', name: 'Alpha', category: 'Test', short: 'Alpha'),
         const Term(id: 'b', name: 'Bravo', category: 'Test', short: 'Bravo'),
+        const Term(id: 'z', name: 'Zulu', category: 'Test', short: 'Zulu'),
       ];
     await store.toggleBookmark('b');
     await tester.pumpWidget(
