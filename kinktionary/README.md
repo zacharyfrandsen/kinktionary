@@ -40,7 +40,7 @@ Signed-in text posts, replies, and likes are stored in Firestore. Profiles and f
 Your term files are the source of truth. Edit them, then rebuild:
 
 ```
-python3 tools/build_terms.py      # needs PyYAML: pip install pyyaml
+python3 -I tools/build_terms.py  # needs PyYAML: pip install pyyaml
 ```
 
 - `data_source/yaml/*.yml`: your Categories, Genders, Orientations and Roles terms. Each section becomes a category in the app.
