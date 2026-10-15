@@ -1,0 +1,202 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function owns(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function validProfile(uid) {
+      let data = request.resource.data;
+      return data.keys().hasAll([
+          'uid', 'displayName', 'handle', 'pronouns', 'bio', 'createdAt', 'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'uid', 'displayName', 'handle', 'pronouns', 'bio', 'photoUrl',
+          'createdAt', 'updatedAt'
+        ])
+        && data.uid == uid
+        && data.displayName is string
+        && data.displayName.size() > 0
+        && data.displayName.size() <= 80
+        && data.handle is string
+        && (data.handle == '' || data.handle.matches('^[a-z0-9_]{3,24}$'))
+        && data.pronouns in [
+          '', 'She/her', 'He/him', 'They/them', 'She/they', 'He/they',
+          'Any pronouns', 'Ask me'
+        ]
+        && data.bio is string
+        && data.bio.size() <= 160
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && (!('photoUrl' in data)
+          || data.photoUrl == null
+          || (data.photoUrl is string && data.photoUrl.size() <= 2048));
+    }
+
+    function validPost(postId) {
+      let data = request.resource.data;
+      return data.keys().hasAll([
+          'id', 'ownerId', 'displayName', 'handle', 'text', 'topic',
+          'createdAt', 'likeCount'
+        ])
+        && data.keys().hasOnly([
+          'id', 'ownerId', 'displayName', 'handle', 'text', 'topic',
+          'createdAt', 'updatedAt', 'likeCount'
+        ])
+        && data.id == postId
+        && data.ownerId == request.auth.uid
+        && data.displayName is string
+        && data.displayName.size() > 0
+        && data.displayName.size() <= 80
+        && data.handle is string
+        && (data.handle == '' || data.handle.matches('^[a-z0-9_]{3,24}$'))
+        && data.text is string
+        && data.text.size() > 0
+        && data.text.size() <= 500
+        && data.topic in ['Experience', 'Question', 'Reflection', 'Advice']
+        && data.createdAt is timestamp
+        && data.likeCount is int
+        && data.likeCount == 0;
+    }
+
+    function validLikeChange(postId) {
+      let likePath = /databases/$(database)/documents/posts/$(postId)/likes/$(request.auth.uid);
+      let previousCount = resource.data.get('likeCount', 0);
+      let nextCount = request.resource.data.get('likeCount', -1);
+      return signedIn()
+        && request.resource.data.diff(resource.data).affectedKeys()
+          .hasOnly(['likeCount'])
+        && nextCount is int
+        && ((!exists(likePath)
+              && existsAfter(likePath)
+              && nextCount == previousCount + 1)
+          || (exists(likePath)
+              && !existsAfter(likePath)
+              && previousCount is int
+              && nextCount == previousCount - 1));
+    }
+
+    function validReply() {
+      let data = request.resource.data;
+      return data.keys().hasAll([
+          'authorId', 'displayName', 'handle', 'text', 'createdAt'
+        ])
+        && data.keys().hasOnly([
+          'authorId', 'displayName', 'handle', 'text', 'createdAt'
+        ])
+        && data.authorId == request.auth.uid
+        && data.displayName is string
+        && data.displayName.size() > 0
+        && data.displayName.size() <= 80
+        && data.handle is string
+        && (data.handle == '' || data.handle.matches('^[a-z0-9_]{3,24}$'))
+        && data.text is string
+        && data.text.size() > 0
+        && data.text.size() <= 300
+        && data.createdAt is timestamp;
+    }
+
+    match /users/{uid} {
+      allow read: if signedIn();
+      allow create: if owns(uid) && validProfile(uid);
+      allow update: if owns(uid)
+        && validProfile(uid)
+        && request.resource.data.createdAt == resource.data.createdAt;
+      allow delete: if owns(uid);
+    }
+
+    match /handles/{handle} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && handle.matches('^[a-z0-9_]{3,24}$')
+        && request.resource.data.keys().hasOnly(['uid'])
+        && request.resource.data.uid == request.auth.uid;
+      allow update: if false;
+      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+    }
+
+    match /posts/{postId} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && validPost(postId)
+        && request.resource.data.createdAt == request.time;
+      allow update: if signedIn()
+        && ((resource.data.ownerId == request.auth.uid
+              && request.resource.data.diff(resource.data).affectedKeys()
+                .hasOnly(['text', 'updatedAt'])
+              && request.resource.data.text is string
+              && request.resource.data.text.size() > 0
+              && request.resource.data.text.size() <= 500
+              && request.resource.data.updatedAt == request.time)
+          || validLikeChange(postId));
+      allow delete: if signedIn() && resource.data.ownerId == request.auth.uid;
+
+      match /replies/{replyId} {
+        allow read: if signedIn();
+        allow create: if signedIn()
+          && exists(/databases/$(database)/documents/posts/$(postId))
+          && validReply()
+          && request.resource.data.createdAt == request.time;
+        allow update: if false;
+        allow delete: if signedIn()
+          && (resource.data.authorId == request.auth.uid
+            || get(/databases/$(database)/documents/posts/$(postId))
+              .data.ownerId == request.auth.uid);
+      }
+
+      match /likes/{userId} {
+        allow read: if signedIn()
+          && exists(/databases/$(database)/documents/posts/$(postId));
+        allow create: if signedIn()
+          && userId == request.auth.uid
+          && exists(/databases/$(database)/documents/posts/$(postId))
+          && request.resource.data.keys().hasAll(['userId', 'createdAt'])
+          && request.resource.data.keys().hasOnly(['userId', 'createdAt'])
+          && request.resource.data.userId == userId
+          && request.resource.data.createdAt == request.time
+          && getAfter(/databases/$(database)/documents/posts/$(postId))
+              .data.get('likeCount', 0)
+            == get(/databases/$(database)/documents/posts/$(postId))
+              .data.get('likeCount', 0) + 1;
+        allow update: if false;
+        allow delete: if signedIn()
+          && userId == request.auth.uid
+          && exists(/databases/$(database)/documents/posts/$(postId))
+          && getAfter(/databases/$(database)/documents/posts/$(postId))
+              .data.get('likeCount', 0)
+            == get(/databases/$(database)/documents/posts/$(postId))
+              .data.get('likeCount', 0) - 1;
+      }
+    }
+
+    match /users/{uid}/friendRequests/{senderId} {
+      allow get: if signedIn()
+        && (request.auth.uid == uid || request.auth.uid == senderId);
+      allow list: if owns(uid);
+      allow create: if signedIn()
+        && senderId == request.auth.uid
+        && senderId != uid
+        && exists(/databases/$(database)/documents/users/$(uid))
+        && request.resource.data.keys().hasAll(['senderId', 'status', 'createdAt'])
+        && request.resource.data.keys().hasOnly(['senderId', 'status', 'createdAt'])
+        && request.resource.data.senderId == senderId
+        && request.resource.data.status == 'pending'
+        && request.resource.data.createdAt == request.time;
+      allow update: if owns(uid)
+        && resource.data.senderId == senderId
+        && resource.data.status == 'pending'
+        && request.resource.data.diff(resource.data).affectedKeys()
+          .hasOnly(['status', 'updatedAt'])
+        && request.resource.data.status in ['accepted', 'rejected']
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if signedIn()
+        && (request.auth.uid == uid || request.auth.uid == senderId);
+    }
+  }
+}
