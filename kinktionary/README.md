@@ -3,7 +3,7 @@
 A consent-first glossary and community app for adults, built with Flutter for Android and iOS.
 
 ## Features
-- Searchable A–Z glossary with category filters (33 starter terms)
+- Searchable A–Z glossary with category filters (133 terms)
 - Guided starter paths ("Start here", "Talking it through", and more)
 - Safety and consent basics
 - Bookmarks and private notes, stored on-device only
