@@ -1,6 +1,0 @@
-connectorId: example
-generate:
-  dartSdk:
-    - outputDir: ../../kinktionary/lib/dataconnect_generated
-      package: dataconnect_generated/generated.dart
-      clientCache: {}
