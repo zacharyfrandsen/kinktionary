@@ -1,6 +1,0 @@
-{
-    "java.compile.nullAnalysis.mode": "automatic",
-    "terminal.integrated.env.linux": {
-        "PATH": "${env:HOME}/.local/share/nodejs/v24.21.0/bin:${env:HOME}/.local/bin:${env:PATH}"
-    }
-}
