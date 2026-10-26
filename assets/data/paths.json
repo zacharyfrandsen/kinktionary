@@ -1,0 +1,192 @@
+[
+  {
+    "id": "start-here",
+    "title": "Start here",
+    "blurb": "New to all of this? These terms give you a solid foundation.",
+    "termIds": [
+      "kink",
+      "vanilla",
+      "fetish",
+      "bdsm",
+      "scene",
+      "consent",
+      "limits"
+    ],
+    "level": "Beginner",
+    "reflection": "Which of these words felt new, and which felt familiar? Write one question you want to explore next."
+  },
+  {
+    "id": "talking-it-through",
+    "title": "Talking it through",
+    "blurb": "How to bring up ideas, set boundaries and stay in sync with a partner.",
+    "termIds": [
+      "negotiation",
+      "yes-no-maybe",
+      "limits",
+      "safeword",
+      "traffic-light",
+      "check-in",
+      "aftercare"
+    ],
+    "level": "Beginner",
+    "reflection": "Think of one boundary and one desire you could share with a partner. How would you phrase each?"
+  },
+  {
+    "id": "roles",
+    "title": "Understanding roles",
+    "blurb": "Who does what, and why 'dominant' and 'top' aren't the same thing.",
+    "termIds": [
+      "ds",
+      "dominant",
+      "submissive",
+      "switch",
+      "top-bottom",
+      "power-exchange",
+      "protocol"
+    ],
+    "level": "Beginner",
+    "reflection": "Which roles feel interesting, and which do not? Remember that roles can change over time."
+  },
+  {
+    "id": "gentle-start",
+    "title": "Gentle ways to explore",
+    "blurb": "Lower-intensity activities many people begin with.",
+    "termIds": [
+      "sensory-play",
+      "praise-kink",
+      "roleplay",
+      "bondage",
+      "aftercare"
+    ],
+    "level": "Beginner",
+    "reflection": "Pick one idea you would like to talk through with a partner. What would make it feel safe?"
+  },
+  {
+    "id": "finding-community",
+    "title": "Finding your people",
+    "blurb": "What to expect when you're ready to meet others.",
+    "termIds": [
+      "munch",
+      "play-party",
+      "dungeon-monitor",
+      "rack",
+      "ssc"
+    ],
+    "level": "Beginner",
+    "reflection": "What would you want to know before attending your first event?"
+  },
+  {
+    "id": "safety-first",
+    "title": "Safety first",
+    "blurb": "Consent in depth, limits, and what to do if something goes wrong.",
+    "level": "Beginner",
+    "reflection": "Write down your own hard limits and soft limits. Which would you share, and with whom?",
+    "termIds": [
+      "consent",
+      "enthusiastic-consent",
+      "ongoing-consent",
+      "coercion",
+      "hard-limit",
+      "soft-limit",
+      "safeword",
+      "emergency-plan",
+      "first-aid-kit"
+    ]
+  },
+  {
+    "id": "feelings-and-aftercare",
+    "title": "Feelings and aftercare",
+    "blurb": "The emotional side of play, from subspace to drop and how to care for each other.",
+    "level": "Beginner",
+    "reflection": "What helps you feel grounded after an intense experience? Share it with a partner before you need it.",
+    "termIds": [
+      "subspace",
+      "topspace",
+      "drop",
+      "aftercare",
+      "scene-debrief",
+      "triggers"
+    ]
+  },
+  {
+    "id": "meeting-people-safely",
+    "title": "Meeting people safely",
+    "blurb": "Practical habits for events, first meetings and finding good mentors.",
+    "level": "Beginner",
+    "reflection": "Which safety habit from this path will you adopt first?",
+    "termIds": [
+      "safe-call",
+      "munch",
+      "mentor",
+      "kink-workshop",
+      "code-of-conduct",
+      "house-rules",
+      "dungeon",
+      "play-party"
+    ]
+  },
+  {
+    "id": "impact-intro",
+    "title": "Impact play basics",
+    "blurb": "What impact play is, the common tools, and where to be careful.",
+    "level": "Intermediate",
+    "reflection": "What sensations do you enjoy, and what do you want to avoid? Put it in your negotiation notes.",
+    "termIds": [
+      "impact-play",
+      "spanking",
+      "paddle",
+      "flogger",
+      "hard-limit",
+      "aftercare"
+    ]
+  },
+  {
+    "id": "rope-and-restraints",
+    "title": "Rope and restraints",
+    "blurb": "Restraint fundamentals with a strong emphasis on safety gear.",
+    "level": "Intermediate",
+    "reflection": "Where could you take an in-person class to learn this properly?",
+    "termIds": [
+      "bondage",
+      "cuffs",
+      "rope",
+      "safety-shears",
+      "shibari",
+      "suspension",
+      "emergency-plan"
+    ]
+  },
+  {
+    "id": "power-dynamics",
+    "title": "Power dynamics, deeper",
+    "blurb": "How D/s relationships are designed, negotiated and reviewed.",
+    "level": "Intermediate",
+    "reflection": "If you designed a dynamic, what would you want to review every month?",
+    "termIds": [
+      "negotiated-dynamic",
+      "ds",
+      "power-exchange",
+      "protocol",
+      "service-submission",
+      "discipline",
+      "punishment",
+      "ownership",
+      "tpe",
+      "24-7"
+    ]
+  },
+  {
+    "id": "non-monogamy",
+    "title": "Beyond monogamy",
+    "blurb": "Relationship structures where more than two people may be involved.",
+    "level": "Intermediate",
+    "reflection": "What agreements would help everyone feel secure and respected?",
+    "termIds": [
+      "enm",
+      "polyamory",
+      "open-relationship",
+      "swinger",
+      "compersion"
+    ]
+  }
+]
