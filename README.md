@@ -1,6 +1,6 @@
 # Kinktionary
 
-A consent-first glossary and community app for adults, built with Flutter for Android and iOS. The source is published so anyone can read it, audit how data is handled, suggest changes or build on it. It is MIT licensed.
+A consent-first glossary and community app for adults, built with Flutter for Android, iOS and the web. The source is published so anyone can read it, audit how data is handled, suggest changes or build on it. It is MIT licensed.
 
 Kinktionary is educational. It is not medical, legal or mental-health advice, and it is for adults only (an 18+ age confirmation appears on first launch).
 
@@ -22,7 +22,7 @@ Kinktionary is educational. It is not medical, legal or mental-health advice, an
 ### Learn
 - **Glossary** with 180+ terms across roles, dynamics, activities, consent and safety, gear, community, genders and orientations. Search by name, definition or details, filter by category, and filter to saved terms.
 - **Term pages** with a short definition, a longer explanation, a safety note where relevant, and links to related terms.
-- **Bookmarks and private notes** on any term. Both stay on the device unless you sign in (see Data and privacy), and both can be browsed and searched from your profile.
+- **Bookmarks and private notes** on any term. Both stay on the device, and both can be browsed and searched from your profile.
 - **Guided paths** such as "Start here", "Talking it through", "Safety first" and "Meeting people safely". Each path walks through one term at a time with Back and Next, remembers where you stopped, lets you jump to any step, and ends with a reflection prompt.
 - **Safety and consent basics**, one tap from the search bar on the Feed and Glossary screens.
 
@@ -39,7 +39,7 @@ Kinktionary is educational. It is not medical, legal or mental-health advice, an
 
 ### Settings
 - Edit profile, including private email, password and phone changes (changes to email or password ask for your current password).
-- Accent and heading colours, background colour or gradient, background icon colour and strength, all synced to your account so a new device looks the same.
+- Accent and heading colours, background colour or gradient, background icon colour and strength, saved on this device.
 - Requests for data deletion or data recovery, and an in-app Open source page with the data statement.
 - A donations page (the link is set at build time).
 
@@ -48,7 +48,7 @@ Kinktionary is educational. It is not medical, legal or mental-health advice, an
 ```
 lib/
   main.dart                  App start, Firebase and App Check setup
-  data_store.dart            Local state and account-settings sync (ChangeNotifier)
+  data_store.dart            Local state and preferences (ChangeNotifier)
   models.dart                Terms, paths, profiles, posts, replies
   social_models.dart         Friends, requests, blocked users
   theme.dart, appearance.dart  Material 3 dark theme and user colour overrides
@@ -57,8 +57,7 @@ lib/
   widgets/                   Shared UI (search row, profile header, colour picker, background)
 assets/data/                 terms.json, paths.json, consent.json (generated or hand-edited)
 data_source/                 YAML and JSON sources the terms are built from
-firebase/                    Firestore and Storage security rules, indexes
-tools/                       Content build script and icon generator
+tools/                       Content build, icon, wallpaper and site-build scripts
 test/                        Widget and unit tests
 ```
 
@@ -71,7 +70,7 @@ test/                        Widget and unit tests
 
 **Only on your device**
 - Age confirmation, wallpaper settings, cached posts.
-- Bookmarks, notes and path progress. When you are signed in, these are also copied to a private document in your account so they follow you to a new device. Nobody else can read it.
+- Bookmarks, notes and path progress. They are never uploaded: the device holds the only copy, and clearing the app data removes them.
 
 **In the cloud, for signed-in users**
 - Email and password (handled by Firebase Authentication; the app never sees your password after sign-in).
@@ -91,7 +90,7 @@ Everything the app can read or write in the cloud is governed by `firebase/fires
 
 - Reading profiles, posts, replies, followers and the public friends list requires being signed in.
 - You can only create, edit or delete your own profile, posts and replies. Likes and like counts are validated so a client cannot set arbitrary counts.
-- Private data (phone number, account settings, friend labels, friend requests, blocked users) is readable only by its owner.
+- Private data (phone number, friend labels, friend requests, blocked users) is readable only by its owner.
 - Usernames are reserved through a separate `handles` collection so they stay unique. A single username can be looked up while signed out, only so the sign-up form can show whether a name is free. Listing usernames requires sign-in.
 - Data requests can be created but never read or changed by clients.
 - Field names, types and sizes are checked on every write.
@@ -106,7 +105,7 @@ Treat the rules as the real security boundary. The Flutter client enforces the s
 | Sign-up, sign-in, profile, phone, data requests | `lib/services/firebase_profile_service.dart` |
 | Email and password changes | `lib/widgets/account_dialogs.dart` |
 | Friends, following, blocking | `lib/services/firebase_social_service.dart` |
-| Local storage and account settings sync | `lib/data_store.dart` |
+| Local storage and preferences | `lib/data_store.dart` |
 | Statement shown to users | `lib/screens/open_source_screen.dart` |
 | Content (terms, paths, consent text) | `data_source/`, `assets/data/` |
 
@@ -117,7 +116,7 @@ You need Flutter and your own Firebase project. No credentials are included in t
 1. `flutter pub get`
 2. Create a Firebase project with Authentication (email/password), Firestore, Storage and App Check.
 3. Run `flutterfire configure`. This replaces the placeholder `lib/firebase_options.dart` and adds `android/app/google-services.json`.
-4. Deploy the rules: `firebase deploy --only firestore:rules,storage --config firebase/firebase.json`
+4. Deploy the rules: `cd firebase && firebase deploy --only firestore:rules,storage` (after `firebase use <your-project-id>`)
 5. `flutter run --dart-define=APP_CHECK_DEBUG=true`, then register the App Check debug token that is printed in the log in the Firebase console. Without it, sign-in is rejected.
 
 Build options:

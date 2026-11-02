@@ -1,0 +1,59 @@
+section_name: Genders
+terms:
+  - agender:
+      name: Agender
+      definition: Someone who does not have a gender.
+  - androgynous:
+      name: Androgynous
+      definition: A look or identity that blends masculine and feminine.
+  - bi_gender:
+      name: Bi-gender
+      definition: Someone who has two genders, together or at different times.
+  - butch:
+      name: Butch
+      definition: A masculine gender expression with roots in queer communities.
+  - crossdresser:
+      name: Crossdresser/Drag
+      definition: Someone who enjoys wearing clothes linked to another gender.
+  - drag:
+      name: Drag King/Queen
+      definition: Performing an exaggerated gender for an audience.
+  - female:
+      name: Female
+      definition: A sex category, usually assigned at birth.
+  - woman:
+      name: Woman
+      definition: Someone who identifies and lives as a woman.
+  - femme:
+      name: Femme
+      definition: A feminine identity or presentation, often claimed in queer spaces.
+  - gender_fluid:
+      name: Gender Fluid
+      definition: Someone whose gender shifts over time.
+  - genderqueer:
+      name: Genderqueer
+      definition: A gender outside the man and woman binary.
+  - intersex:
+      name: Intersex
+      definition: Born with sex traits that do not fit typical male or female definitions.
+  - male:
+      name: Male
+      definition: A sex category, usually assigned at birth.
+  - man:
+      name: Man
+      definition: Someone who identifies and lives as a man.
+  - non_binary:
+      name: Non-Binary
+      definition: A gender that is not only man or woman.
+  - trans_man:
+      name: Trans Man
+      definition: A man who was assigned female at birth.
+  - trans_woman:
+      name: Trans Woman
+      definition: A woman who was assigned male at birth.
+  - transgender:
+      name: Transgender
+      definition: Someone whose gender differs from the sex they were assigned at birth.
+  - two_spirit:
+      name: Two-Spirit
+      definition: An Indigenous identity that blends masculine and feminine.

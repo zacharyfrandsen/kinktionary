@@ -1,0 +1,1754 @@
+[
+  {
+    "id": "kink",
+    "name": "Kink",
+    "category": "Basics",
+    "short": "Unusual sexual or sensual interests and practices.",
+    "details": "'Kink' is an umbrella word for interests that sit outside what a culture treats as typical. It covers light sensory play through to elaborate role-play. Having a kink is common, and everyone involved needs to be a consenting adult.",
+    "related": [
+      "fetish",
+      "bdsm",
+      "vanilla",
+      "consent"
+    ]
+  },
+  {
+    "id": "fetish",
+    "name": "Fetish",
+    "category": "Basics",
+    "short": "A strong pull to a specific object, material or body part.",
+    "details": "A fetish is a focused interest, like a fabric or a kind of footwear, that plays a big part in arousal. People use 'kink' and 'fetish' loosely, but a fetish tends to be more specific and more central.",
+    "related": [
+      "kink"
+    ]
+  },
+  {
+    "id": "bdsm",
+    "name": "BDSM",
+    "category": "Basics",
+    "short": "Bondage, Discipline, Dominance, Submission, Sadism, Masochism.",
+    "details": "BDSM covers bondage and discipline, dominance and submission, and sadism and masochism. You do not need to like all of it, and many people explore only one part.",
+    "related": [
+      "kink",
+      "ds",
+      "scene"
+    ]
+  },
+  {
+    "id": "scene",
+    "name": "Scene",
+    "category": "Basics",
+    "short": "A set period of agreed kink activity.",
+    "details": "A scene is a set stretch of time for agreed kink, from minutes to hours. It has a start, an end and a conversation beforehand, so everyone knows when roles begin and stop.",
+    "related": [
+      "negotiation",
+      "aftercare"
+    ]
+  },
+  {
+    "id": "play",
+    "name": "Play",
+    "category": "Basics",
+    "short": "The everyday word for kink activity.",
+    "details": "'Play' is the everyday word for kinky activity, as in 'impact play' or 'let's play this weekend'. It keeps the focus on something shared and enjoyable.",
+    "related": [
+      "scene"
+    ]
+  },
+  {
+    "id": "limit-testing",
+    "name": "Limit testing",
+    "category": "Basics",
+    "short": "Gently finding where a boundary sits, at the owner's pace.",
+    "details": "Gently finding out where a boundary sits, at the pace of the person who holds it. Pushing someone past a stated limit is not exploring, it is a violation.",
+    "related": [
+      "limits",
+      "soft-limit",
+      "hard-limit"
+    ],
+    "safetyNote": "Never pressure someone to move a limit."
+  },
+  {
+    "id": "vanilla-sex",
+    "name": "Vanilla sex",
+    "category": "Basics",
+    "short": "Sex without kink.",
+    "details": "Sex without kink. Many people enjoy both vanilla and kinky sex, and 'vanilla' is a description, not a judgement.",
+    "related": [
+      "vanilla",
+      "kink"
+    ]
+  },
+  {
+    "id": "fantasy-vs-reality",
+    "name": "Fantasy vs reality",
+    "category": "Basics",
+    "short": "The gap between what you enjoy imagining and what you want to do.",
+    "details": "A fantasy is something you enjoy imagining; it is not an instruction to act. Talking it through is how you find out whether it would feel right in real life.",
+    "related": [
+      "kink",
+      "negotiation"
+    ]
+  },
+  {
+    "id": "consent",
+    "name": "Consent",
+    "category": "Consent & Safety",
+    "short": "A free, clear yes that can be taken back at any time.",
+    "details": "Consent means every person freely agrees to what is happening, understands it, and can change their mind at any time. Yes to one thing is not yes to everything, and silence or pressure is not consent.",
+    "related": [
+      "negotiation",
+      "safeword",
+      "limits"
+    ],
+    "safetyNote": "Consent can be withdrawn at any point, and a partner who respects you will stop right away."
+  },
+  {
+    "id": "negotiation",
+    "name": "Negotiation",
+    "category": "Consent & Safety",
+    "short": "The talk about wants, limits and practical details before play.",
+    "details": "Negotiation is the talk before play: what you want, what is off the table, health needs, signals and aftercare. It can feel awkward, but it usually makes the scene itself easier and more fun.",
+    "related": [
+      "consent",
+      "limits",
+      "safeword",
+      "yes-no-maybe"
+    ]
+  },
+  {
+    "id": "limits",
+    "name": "Limits",
+    "category": "Consent & Safety",
+    "short": "What you will and will not do.",
+    "details": "Hard limits are things you will not do at all. Soft limits are things you are unsure about, or would only try in the right conditions. Limits can change, and nobody owes an explanation.",
+    "related": [
+      "negotiation",
+      "yes-no-maybe"
+    ]
+  },
+  {
+    "id": "yes-no-maybe",
+    "name": "Yes/No/Maybe list",
+    "category": "Consent & Safety",
+    "short": "A checklist for sorting interests into yes, no and maybe.",
+    "details": "A long list of activities that you mark yes, no or maybe. Partners fill it in separately and compare, which makes shy topics easier to raise.",
+    "related": [
+      "negotiation",
+      "limits"
+    ]
+  },
+  {
+    "id": "safeword",
+    "name": "Safeword",
+    "category": "Consent & Safety",
+    "short": "A word you agree on that means slow down or stop.",
+    "details": "A word you both agree on that means slow down or stop. It matters most in role-play, where 'no' might be part of the scene. It is always honoured straight away.",
+    "related": [
+      "traffic-light",
+      "consent"
+    ],
+    "safetyNote": "If the person cannot speak, for example while gagged, agree on a non-verbal signal beforehand."
+  },
+  {
+    "id": "traffic-light",
+    "name": "Traffic light system",
+    "category": "Consent & Safety",
+    "short": "Green, yellow and red as quick check-ins during play.",
+    "details": "Green means keep going, yellow means slow down or check in, red means stop. Simple enough to remember when someone is overwhelmed.",
+    "related": [
+      "safeword",
+      "check-in"
+    ]
+  },
+  {
+    "id": "check-in",
+    "name": "Check-in",
+    "category": "Consent & Safety",
+    "short": "A quick pause to see how someone is doing.",
+    "details": "A quick word, question or gesture to see how someone is doing, during and after play. Checking in often is a sign of care, not a mood killer.",
+    "related": [
+      "traffic-light",
+      "aftercare"
+    ]
+  },
+  {
+    "id": "ssc",
+    "name": "SSC",
+    "category": "Consent & Safety",
+    "short": "Safe, Sane and Consensual.",
+    "details": "Safe, Sane and Consensual is a long-standing guideline: play should be as safe as possible, with a clear head and real consent. Some people prefer RACK, because no activity is truly risk-free.",
+    "related": [
+      "rack",
+      "consent"
+    ]
+  },
+  {
+    "id": "rack",
+    "name": "RACK",
+    "category": "Consent & Safety",
+    "short": "Risk-Aware Consensual Kink.",
+    "details": "Learn the real risks, talk about them honestly, then consent with that knowledge. Many people find it more realistic than SSC.",
+    "related": [
+      "ssc",
+      "consent"
+    ]
+  },
+  {
+    "id": "aftercare",
+    "name": "Aftercare",
+    "category": "Consent & Safety",
+    "short": "Looking after each other after play.",
+    "details": "Aftercare is the time after a scene to come down together: water, a snack, a blanket, quiet or talking. Everyone needs different things, and tops need it too.",
+    "related": [
+      "drop",
+      "negotiation"
+    ]
+  },
+  {
+    "id": "drop",
+    "name": "Drop",
+    "category": "Consent & Safety",
+    "short": "A low mood or low energy after intense play.",
+    "details": "A dip in mood or energy after intense play, sometimes hours or a day later. It can feel like sadness, anxiety or exhaustion. Aftercare and a check-in the next day help. If it is severe or lasts, talk to a professional.",
+    "related": [
+      "aftercare"
+    ],
+    "safetyNote": "If you feel unsafe or in crisis, contact a local emergency or crisis service."
+  },
+  {
+    "id": "enthusiastic-consent",
+    "name": "Enthusiastic consent",
+    "category": "Consent & Safety",
+    "short": "A clear, eager yes rather than the absence of a no.",
+    "details": "Everyone actively wants to be there and shows it. Silence, hesitation, or going along to keep the peace is not consent.",
+    "related": [
+      "consent",
+      "check-in",
+      "ongoing-consent"
+    ]
+  },
+  {
+    "id": "ongoing-consent",
+    "name": "Ongoing consent",
+    "category": "Consent & Safety",
+    "short": "Consent is renewed as you go and can be withdrawn anytime.",
+    "details": "Agreeing beforehand does not lock anyone in. You can slow down, change the plan or stop partway through, without needing a reason.",
+    "related": [
+      "consent",
+      "safeword",
+      "check-in"
+    ]
+  },
+  {
+    "id": "hard-limit",
+    "name": "Hard limit",
+    "category": "Consent & Safety",
+    "short": "Something you will not do under any circumstances.",
+    "details": "Something you will not do under any circumstances. It is not up for persuasion, and respecting it is the basic test of trust.",
+    "related": [
+      "limits",
+      "soft-limit",
+      "negotiation"
+    ]
+  },
+  {
+    "id": "soft-limit",
+    "name": "Soft limit",
+    "category": "Consent & Safety",
+    "short": "Something you are unsure about or only under certain conditions.",
+    "details": "Something you are unsure about, or would only try in the right conditions. It moves at the pace of the person who holds it.",
+    "related": [
+      "limits",
+      "hard-limit",
+      "yes-no-maybe"
+    ]
+  },
+  {
+    "id": "coercion",
+    "name": "Coercion",
+    "category": "Consent & Safety",
+    "short": "Pressure or threats that push someone into a yes.",
+    "details": "Pressure, guilt, threats or a power imbalance that pushes someone into a yes. Consent given under pressure is not consent.",
+    "related": [
+      "consent",
+      "enthusiastic-consent"
+    ],
+    "safetyNote": "If you feel pressured, you can stop at any time. Reach out to a trusted friend or a local support service."
+  },
+  {
+    "id": "triggers",
+    "name": "Triggers",
+    "category": "Consent & Safety",
+    "short": "Things that set off a strong distress reaction, often from past trauma.",
+    "details": "Words, sensations or situations that cause a strong distressing reaction, often linked to past trauma. Sharing yours is optional, and having a plan for what to do helps.",
+    "related": [
+      "negotiation",
+      "safeword",
+      "aftercare"
+    ],
+    "safetyNote": "Kink is not a substitute for therapy. If something brings up trauma, a qualified mental-health professional can help."
+  },
+  {
+    "id": "subspace",
+    "name": "Subspace",
+    "category": "Consent & Safety",
+    "short": "A floaty, dreamy state some bottoms get during intense play.",
+    "details": "A floaty, dreamy or disconnected state some bottoms get during intense play. Someone in subspace may not be able to speak up or judge their own limits, so stick to what was agreed.",
+    "related": [
+      "drop",
+      "aftercare",
+      "topspace"
+    ],
+    "safetyNote": "Someone in subspace may not be able to consent to changes. Stick to what was negotiated and ask simple questions."
+  },
+  {
+    "id": "topspace",
+    "name": "Topspace",
+    "category": "Consent & Safety",
+    "short": "An intense, focused state some tops get during a scene.",
+    "details": "An intense, focused state some tops get during a scene, often followed by a dip. Tops need aftercare and rest too.",
+    "related": [
+      "subspace",
+      "drop",
+      "aftercare"
+    ]
+  },
+  {
+    "id": "safe-call",
+    "name": "Safe call",
+    "category": "Consent & Safety",
+    "short": "A check-in plan with a trusted person when meeting someone new.",
+    "details": "Tell a trusted person who you are meeting, where, and when you will check in. If you do not confirm you are okay, they follow the plan you agreed.",
+    "related": [
+      "munch",
+      "negotiation"
+    ],
+    "safetyNote": "Meet new people in public places first, and tell someone you trust where you will be."
+  },
+  {
+    "id": "barrier-methods",
+    "name": "Barrier methods",
+    "category": "Consent & Safety",
+    "short": "Condoms, gloves and dams that lower the risk of infection.",
+    "details": "Condoms, gloves, dams and similar items that lower the risk of infections. Fresh barriers for each person, and clean shared items, are standard in play spaces.",
+    "related": [
+      "negotiation",
+      "toy-hygiene"
+    ],
+    "safetyNote": "Regular STI testing and open conversations about status are part of safer play."
+  },
+  {
+    "id": "toy-hygiene",
+    "name": "Toy hygiene",
+    "category": "Consent & Safety",
+    "short": "Cleaning and storing gear so it is safe to use again.",
+    "details": "Different materials need different care: soap and water, disinfectant, or a cover for porous items. Clean anything that touched fluids or broken skin before it is used again.",
+    "related": [
+      "barrier-methods"
+    ],
+    "safetyNote": "Never reuse an item that has touched broken skin or bodily fluids on another person without proper cleaning."
+  },
+  {
+    "id": "neg-checklist",
+    "name": "Negotiation checklist",
+    "category": "Consent & Safety",
+    "short": "A list of activities to talk through before play.",
+    "details": "A checklist of activities that each person marks yes, no or maybe, then compares. It is a starting point for talking, not a contract.",
+    "related": [
+      "negotiation",
+      "yes-no-maybe",
+      "limits"
+    ]
+  },
+  {
+    "id": "scene-debrief",
+    "name": "Debrief",
+    "category": "Consent & Safety",
+    "short": "A talk after a scene about what worked and what to change.",
+    "details": "A talk after a scene about what worked, what did not and what to change. Do it once everyone has rested, and keep it curious rather than critical.",
+    "related": [
+      "aftercare",
+      "negotiation",
+      "check-in"
+    ]
+  },
+  {
+    "id": "emergency-plan",
+    "name": "Emergency plan",
+    "category": "Consent & Safety",
+    "short": "Knowing ahead of time what to do if something goes wrong.",
+    "details": "Decide in advance how to stop, how to get restraints off fast, where the first-aid kit is and when to call for help. Then nobody has to improvise under stress.",
+    "related": [
+      "safety-shears",
+      "safeword",
+      "dungeon-monitor"
+    ],
+    "safetyNote": "If someone is unresponsive, in severe pain, has trouble breathing or numbness that does not pass, call emergency services immediately."
+  },
+  {
+    "id": "prick",
+    "name": "PRICK",
+    "category": "Consent & Safety",
+    "short": "Personal Responsibility, Informed, Consensual Kink.",
+    "details": "Each person takes responsibility for their own limits and choices, and consents knowing the real risks. It puts the work on everyone involved, not just the top.",
+    "related": [
+      "ssc",
+      "rack",
+      "consent",
+      "negotiation"
+    ]
+  },
+  {
+    "id": "sub-frenzy",
+    "name": "Sub frenzy",
+    "category": "Consent & Safety",
+    "short": "A rush of excitement that makes new submissives want everything at once.",
+    "details": "A rush of excitement that makes new submissives want to try everything at once. It is normal, but it makes people skip limits and miss red flags, so slow down and keep checking in.",
+    "related": [
+      "exploring",
+      "limits",
+      "mentor",
+      "drop"
+    ],
+    "safetyNote": "Wanting something badly is not the same as being ready. Take your time and keep your limits."
+  },
+  {
+    "id": "ds",
+    "name": "D/s",
+    "category": "Dynamics",
+    "short": "Dominance and submission.",
+    "details": "A pattern where one person leads and the other chooses to follow, within agreed limits. It can stay inside a scene or run through daily life. The submissive person holds as much power, because everything happens by their consent.",
+    "related": [
+      "dominant",
+      "submissive",
+      "power-exchange"
+    ]
+  },
+  {
+    "id": "top-bottom",
+    "name": "Top / Bottom",
+    "category": "Dynamics",
+    "short": "Who gives and who receives the action, separate from power.",
+    "details": "A top gives the action and a bottom receives it. These describe what people do, not who holds power, so a submissive can top and a dominant can bottom.",
+    "related": [
+      "top",
+      "bottom",
+      "dominant",
+      "submissive",
+      "switch"
+    ]
+  },
+  {
+    "id": "power-exchange",
+    "name": "Power exchange",
+    "category": "Dynamics",
+    "short": "Trading control by agreement.",
+    "details": "One person agrees to give some authority over certain areas, and the other agrees to take responsibility for it. What is included is chosen, and it can be renegotiated.",
+    "related": [
+      "ds",
+      "protocol",
+      "negotiation"
+    ]
+  },
+  {
+    "id": "protocol",
+    "name": "Protocol",
+    "category": "Dynamics",
+    "short": "Agreed rituals or rules inside a dynamic.",
+    "details": "Agreed habits and rituals, like how to address each other or how a scene begins. They add structure and meaning for people who like that, and they are optional.",
+    "related": [
+      "ds",
+      "power-exchange"
+    ]
+  },
+  {
+    "id": "collar",
+    "name": "Collar",
+    "category": "Dynamics",
+    "short": "A symbol of commitment in a dynamic.",
+    "details": "A piece of jewellery or gear that marks a commitment in a dynamic. For some people it is like an engagement; for others it is a private reminder. Its meaning is set by the people wearing it.",
+    "related": [
+      "ds",
+      "protocol"
+    ]
+  },
+  {
+    "id": "tpe",
+    "name": "Total power exchange",
+    "category": "Dynamics",
+    "short": "A dynamic where one person gives broad authority over daily life.",
+    "details": "Broad authority over many parts of daily life, not just scenes. It needs deep trust, clear negotiation and regular review, and either person can still renegotiate or leave.",
+    "related": [
+      "power-exchange",
+      "ds",
+      "protocol"
+    ],
+    "safetyNote": "Power exchange only works when consent stays real. Keep outside friendships and support, and revisit agreements often."
+  },
+  {
+    "id": "24-7",
+    "name": "24/7",
+    "category": "Dynamics",
+    "short": "A dynamic that stays active all the time, not just in scenes.",
+    "details": "A dynamic that stays active all the time rather than only in scenes. The rules and intensity are whatever the partners agree, and many people keep breaks for practical reasons.",
+    "related": [
+      "tpe",
+      "ds",
+      "protocol"
+    ]
+  },
+  {
+    "id": "service-submission",
+    "name": "Service submission",
+    "category": "Dynamics",
+    "short": "Showing submission by doing things for a partner.",
+    "details": "Showing submission by doing things for a partner: cooking, tidying, errands, or noticing what they need. It is often non-sexual and tied to care and routine.",
+    "related": [
+      "submissive",
+      "protocol",
+      "ds"
+    ]
+  },
+  {
+    "id": "discipline",
+    "name": "Discipline",
+    "category": "Dynamics",
+    "short": "Training, routine and agreed consequences in a dynamic.",
+    "details": "Rules, routines and agreed consequences that help someone meet their own goals. Nothing is meant to cause real harm.",
+    "related": [
+      "ds",
+      "protocol",
+      "punishment"
+    ]
+  },
+  {
+    "id": "punishment",
+    "name": "Punishment",
+    "category": "Dynamics",
+    "short": "An agreed consequence for breaking a rule.",
+    "details": "An agreed consequence for breaking a rule in a dynamic. It is never given in anger, and many dynamics skip it entirely.",
+    "related": [
+      "discipline",
+      "brat",
+      "ds"
+    ],
+    "safetyNote": "Never discipline while angry. Pause until you can act calmly and within the agreed terms."
+  },
+  {
+    "id": "ownership",
+    "name": "Ownership",
+    "category": "Dynamics",
+    "short": "A dynamic where one person is symbolically owned by another.",
+    "details": "A symbolic, negotiated arrangement where one person is 'owned' by another, often marked by a collar or ritual. The owned person keeps their agency and can leave.",
+    "related": [
+      "collar",
+      "ds",
+      "tpe"
+    ]
+  },
+  {
+    "id": "negotiated-dynamic",
+    "name": "Negotiated dynamic",
+    "category": "Dynamics",
+    "short": "A relationship structure the partners design together.",
+    "details": "A relationship that partners design together instead of following a script: roles, rules, boundaries and review points. Writing it down helps, as long as it stays flexible.",
+    "related": [
+      "negotiation",
+      "protocol",
+      "power-exchange"
+    ]
+  },
+  {
+    "id": "polyamory",
+    "name": "Polyamory",
+    "category": "Dynamics",
+    "short": "More than one romantic relationship, with everyone's consent.",
+    "details": "Having, or being open to, more than one romantic relationship with everyone's knowledge and consent. Structures range from a main partner with others to non-hierarchical networks.",
+    "related": [
+      "enm",
+      "compersion",
+      "open-relationship"
+    ]
+  },
+  {
+    "id": "enm",
+    "name": "Ethical non-monogamy",
+    "category": "Dynamics",
+    "short": "Relationships where everyone agrees partners may have other partners.",
+    "details": "An umbrella for relationships where everyone knows and agrees that partners may have other partners. It includes polyamory, open relationships and swinging.",
+    "related": [
+      "polyamory",
+      "open-relationship",
+      "swinger"
+    ]
+  },
+  {
+    "id": "open-relationship",
+    "name": "Open relationship",
+    "category": "Dynamics",
+    "short": "A committed couple who agree they can see other people.",
+    "details": "A committed relationship where both people agree they can have other sexual or romantic connections. Every couple sets their own rules, and regular check-ins keep it working.",
+    "related": [
+      "enm",
+      "polyamory",
+      "swinger"
+    ]
+  },
+  {
+    "id": "compersion",
+    "name": "Compersion",
+    "category": "Dynamics",
+    "short": "Joy because a partner is happy with someone else.",
+    "details": "Joy because a partner is happy with someone else. It is common but not required, and many people simply aim for respect and security.",
+    "related": [
+      "polyamory",
+      "enm"
+    ]
+  },
+  {
+    "id": "polycule",
+    "name": "Polycule",
+    "category": "Dynamics",
+    "short": "The network of people linked by partners and partners' partners.",
+    "details": "The whole network of people linked by partners and partners-of-partners. Thinking in a polycule helps everyone see who is affected by a change.",
+    "related": [
+      "polyamory",
+      "metamour",
+      "compersion",
+      "enm"
+    ]
+  },
+  {
+    "id": "metamour",
+    "name": "Metamour",
+    "category": "Dynamics",
+    "short": "Your partner's other partner.",
+    "details": "Your partner's other partner, with whom you are not directly involved. Good metamour relationships are built on respect for each other's time and agreements.",
+    "related": [
+      "polyamory",
+      "polycule",
+      "compersion",
+      "enm"
+    ]
+  },
+  {
+    "id": "bondage",
+    "name": "Bondage",
+    "category": "Activities",
+    "short": "Restraining a partner with rope, cuffs or other gear.",
+    "details": "Any agreed restraint, from scarves to rope and cuffs. Keep safety shears within reach, and never leave a restrained person alone.",
+    "related": [
+      "safeword",
+      "check-in"
+    ],
+    "safetyNote": "Never leave a restrained person alone. Watch for numbness, tingling or colour changes, and avoid pressure on the neck and joints."
+  },
+  {
+    "id": "impact-play",
+    "name": "Impact play",
+    "category": "Activities",
+    "short": "Agreed hitting or striking for sensation.",
+    "details": "Consensual hitting or striking for sensation, from a hand to a paddle or flogger. Start light, learn which areas are safer, and check in often.",
+    "related": [
+      "negotiation",
+      "aftercare"
+    ],
+    "safetyNote": "Avoid the spine, kidneys, joints and head. Stop if there is sharp pain, numbness or unexpected bruising."
+  },
+  {
+    "id": "sensory-play",
+    "name": "Sensory play",
+    "category": "Activities",
+    "short": "Using touch, temperature, sound or sight to change sensation.",
+    "details": "Using touch, temperature, sound or sight to change sensation: blindfolds, feathers, ice, fabric. It is often a gentle first step into kink.",
+    "related": [
+      "scene",
+      "check-in"
+    ],
+    "safetyNote": "Test temperatures on your own skin first, and avoid anything that could burn or cause an allergic reaction."
+  },
+  {
+    "id": "roleplay",
+    "name": "Roleplay",
+    "category": "Activities",
+    "short": "Acting out characters or scenarios.",
+    "details": "Acting out characters or scenes, like a boss and an employee. Agree the boundaries and a safeword first, because the scene may include saying things that are not true.",
+    "related": [
+      "negotiation",
+      "safeword"
+    ]
+  },
+  {
+    "id": "praise-kink",
+    "name": "Praise kink",
+    "category": "Activities",
+    "short": "Arousal or comfort from being told you are doing well.",
+    "details": "Arousal or comfort from being told you are doing well, during sex or in a dynamic. It is often a gentle way into D/s.",
+    "related": [
+      "ds",
+      "aftercare"
+    ]
+  },
+  {
+    "id": "shibari",
+    "name": "Shibari",
+    "category": "Activities",
+    "short": "A Japanese style of decorative rope bondage.",
+    "details": "A Japanese style of decorative rope bondage, often used interchangeably with kinbaku. It takes training and is best learned in person.",
+    "related": [
+      "rope",
+      "bondage",
+      "rigger"
+    ],
+    "safetyNote": "Rope can damage nerves and circulation. Learn from qualified instructors and never practise suspension without proper training."
+  },
+  {
+    "id": "spanking",
+    "name": "Spanking",
+    "category": "Activities",
+    "short": "Striking the buttocks with a hand or implement.",
+    "details": "Striking the buttocks with a hand or implement. Warm up first, vary the strength, and stay on fleshy areas.",
+    "related": [
+      "impact-play",
+      "paddle",
+      "spanko"
+    ],
+    "safetyNote": "Stay on the fleshy part of the buttocks and thighs, and avoid the tailbone and lower back."
+  },
+  {
+    "id": "wax-play",
+    "name": "Wax play",
+    "category": "Activities",
+    "short": "Dripping warm candle wax onto skin for sensation.",
+    "details": "Dripping warm candle wax on skin for sensation. Use candles made for skin, test on your own hand first, and keep the wax away from the face.",
+    "related": [
+      "temperature-play",
+      "sensory-play"
+    ],
+    "safetyNote": "Use only skin-safe, low-melt-point candles. Keep away from the face and sensitive areas, and have water close."
+  },
+  {
+    "id": "temperature-play",
+    "name": "Temperature play",
+    "category": "Activities",
+    "short": "Using heat or cold, like ice or warm towels.",
+    "details": "Using heat or cold, like ice, warm towels or metal. Keep it mild and test on your own skin before using it on someone else.",
+    "related": [
+      "sensory-play",
+      "wax-play"
+    ],
+    "safetyNote": "Avoid extreme temperatures and do not leave ice on skin for long."
+  },
+  {
+    "id": "edging",
+    "name": "Edging",
+    "category": "Activities",
+    "short": "Building arousal and backing off, again and again.",
+    "details": "Building arousal and stopping just before climax, then repeating. It can be solo or with a partner, and it is often part of orgasm control.",
+    "related": [
+      "orgasm-control",
+      "sensory-play"
+    ]
+  },
+  {
+    "id": "orgasm-control",
+    "name": "Orgasm control",
+    "category": "Activities",
+    "short": "One person decides when or whether the other can climax.",
+    "details": "One person decides when or whether the other can climax. It ranges from playful teasing to long-term rules, and it needs clear agreement and attention to comfort.",
+    "related": [
+      "edging",
+      "ds",
+      "power-exchange"
+    ]
+  },
+  {
+    "id": "degradation",
+    "name": "Degradation",
+    "category": "Activities",
+    "short": "Using insults or demeaning words as agreed play.",
+    "details": "Using insults or demeaning words as part of agreed play. Say which words are fine and which are off-limits, and give extra reassurance afterwards.",
+    "related": [
+      "negotiation",
+      "aftercare",
+      "limits"
+    ],
+    "safetyNote": "Agree on off-limit words and topics, and follow up with extra reassurance during aftercare."
+  },
+  {
+    "id": "humiliation",
+    "name": "Humiliation",
+    "category": "Activities",
+    "short": "Play based on embarrassment or being made to feel small.",
+    "details": "Play based on embarrassment or being made to feel small, with consent. The intensity varies, so limits and a way to stop are essential.",
+    "related": [
+      "degradation",
+      "aftercare",
+      "negotiation"
+    ]
+  },
+  {
+    "id": "pet-play",
+    "name": "Pet play",
+    "category": "Activities",
+    "short": "Role-play where someone takes on an animal role.",
+    "details": "Role-play where someone takes on an animal role, like a pup, kitten or pony. It is often non-sexual, and gear and behaviour vary widely.",
+    "related": [
+      "pup",
+      "kitten",
+      "pony",
+      "pet",
+      "roleplay"
+    ]
+  },
+  {
+    "id": "cnc",
+    "name": "Consensual non-consent",
+    "category": "Activities",
+    "short": "Agreed play-acting of resistance or a lack of consent.",
+    "details": "A scene where people agree in advance to act out resistance or a lack of consent. The non-consent is fiction and the real consent is detailed and ongoing. It carries emotional risk and is not for new partners.",
+    "related": [
+      "consent",
+      "negotiation",
+      "safeword"
+    ],
+    "safetyNote": "CNC needs deep trust, detailed negotiation and a reliable safeword. Skip it entirely if you are not sure."
+  },
+  {
+    "id": "suspension",
+    "name": "Suspension",
+    "category": "Activities",
+    "short": "Hanging part or all of a person's weight from rope or supports.",
+    "details": "Hanging part or all of a person's weight from rope or supports. It is high risk, needs specialist training, strong equipment and a spotter.",
+    "related": [
+      "rope",
+      "shibari",
+      "bondage"
+    ],
+    "safetyNote": "Suspension can cause serious injury. Get in-person instruction and never attempt it alone."
+  },
+  {
+    "id": "primal-play",
+    "name": "Primal play",
+    "category": "Activities",
+    "short": "Play built on instinct, chasing, wrestling or playful aggression.",
+    "details": "Play built on instinct: chasing, wrestling, growling, playful aggression. It is physical and raw but still runs on limits and safewords.",
+    "related": [
+      "primal",
+      "primal_predator",
+      "primal_prey"
+    ]
+  },
+  {
+    "id": "breath-play",
+    "name": "Breath play",
+    "category": "Activities",
+    "short": "Controlling breathing or blood flow to the brain.",
+    "details": "Controlling breathing or blood flow to the brain, often by choking or covering the mouth. It can cause brain injury, stroke or death, and there is no safe version. Learn the risks first, never do it alone, and never press on the front of the throat.",
+    "related": [
+      "bondage",
+      "safeword",
+      "emergency-plan",
+      "cnc"
+    ],
+    "safetyNote": "Breath play can kill, even with an experienced partner. Agree on a signal, never do it alone, and call emergency services if someone loses consciousness."
+  },
+  {
+    "id": "chastity",
+    "name": "Chastity",
+    "category": "Activities",
+    "short": "Using a device or agreement to control sex or orgasms.",
+    "details": "Using a device or an agreement to control when someone can have sex or an orgasm. Comfort, hygiene, skin checks and an emergency key matter more than the fantasy.",
+    "related": [
+      "orgasm-control",
+      "tease-and-denial",
+      "power-exchange",
+      "safeword"
+    ],
+    "safetyNote": "Check skin and circulation daily, keep a key accessible, and stop if there is pain, swelling or numbness."
+  },
+  {
+    "id": "tease-and-denial",
+    "name": "Tease and denial",
+    "category": "Activities",
+    "short": "Arousing someone, then backing off, without letting them finish.",
+    "details": "Arousing someone and then backing off, over and over, without letting them finish. It is a game of anticipation and needs an agreed end point.",
+    "related": [
+      "edging",
+      "orgasm-control",
+      "chastity",
+      "safeword"
+    ]
+  },
+  {
+    "id": "knife-play",
+    "name": "Knife play",
+    "category": "Activities",
+    "short": "Using a blade for sensation or fear, without cutting.",
+    "details": "Using a blade for sensation or fear, usually the flat side or the tip on skin. Use a sharp, clean blade, avoid the neck and joints, and agree that there will be no cutting or pressure.",
+    "related": [
+      "sensory-play",
+      "cnc",
+      "emergency-plan",
+      "safeword"
+    ],
+    "safetyNote": "Agree on no broken skin, keep the blade sharp and clean, and have a first-aid kit ready."
+  },
+  {
+    "id": "electro-play",
+    "name": "Electro play",
+    "category": "Activities",
+    "short": "Using low-level electrical current for tingling or pulsing.",
+    "details": "Using low-level electrical current for tingling or pulsing sensation. Use purpose-built gear only, never anything mains-powered, and never across the chest or head.",
+    "related": [
+      "sensory-play",
+      "impact-play",
+      "emergency-plan",
+      "safeword"
+    ],
+    "safetyNote": "Never use mains electricity, never place electrodes across the chest or head, and avoid it entirely if anyone has a heart condition or implant."
+  },
+  {
+    "id": "needle-play",
+    "name": "Needle play",
+    "category": "Activities",
+    "short": "Inserting sterile needles through the skin for sensation.",
+    "details": "Inserting sterile needles through the skin for sensation or decoration. It needs proper training, sterile single-use supplies and a plan for safe disposal.",
+    "related": [
+      "electro-play",
+      "toy-hygiene",
+      "emergency-plan",
+      "first-aid-kit"
+    ],
+    "safetyNote": "Use sterile, single-use needles only, never reuse or share them, and dispose of them in a sharps container."
+  },
+  {
+    "id": "fire-play",
+    "name": "Fire play",
+    "category": "Activities",
+    "short": "Using small flames or flash cotton for heat and fear.",
+    "details": "Using small flames or flash cotton for heat and fear. It is one of the highest-risk kinks: get training, use a fire-safe area, and keep an extinguisher within reach.",
+    "related": [
+      "temperature-play",
+      "emergency-plan",
+      "first-aid-kit",
+      "safeword"
+    ],
+    "safetyNote": "Fire spreads fast. Remove loose hair and clothing, never use alcohol-based products, and keep water and an extinguisher beside you."
+  },
+  {
+    "id": "nipple-play",
+    "name": "Nipple play",
+    "category": "Activities",
+    "short": "Stimulating the nipples by hand, mouth, clamps or temperature.",
+    "details": "Stimulating the nipples by hand, mouth, clamps or temperature. The nerves there are sensitive, so build slowly and check colour and feeling when using clamps.",
+    "related": [
+      "nipple-clamps",
+      "sensory-play",
+      "temperature-play",
+      "check-in"
+    ]
+  },
+  {
+    "id": "objectification",
+    "name": "Objectification",
+    "category": "Activities",
+    "short": "Being treated as an object or a thing to use, as agreed play.",
+    "details": "Being treated as an object or a thing to use, as agreed role-play. Because the fantasy often means not speaking up, set clear limits and check in afterwards.",
+    "related": [
+      "degradation",
+      "humiliation",
+      "toy",
+      "aftercare"
+    ]
+  },
+  {
+    "id": "medical-play",
+    "name": "Medical play",
+    "category": "Activities",
+    "short": "Role-play around medical settings, exams or equipment.",
+    "details": "Role-play around medical settings, exams or equipment. Keep it fantasy only: no real procedures, no real medication, and no sharing of needles.",
+    "related": [
+      "roleplay",
+      "objectification",
+      "safeword",
+      "emergency-plan"
+    ],
+    "safetyNote": "Never do real medical procedures or give real medication. Anything that breaks skin needs sterile, single-use supplies."
+  },
+  {
+    "id": "pegging",
+    "name": "Pegging",
+    "category": "Activities",
+    "short": "Using a strap-on to penetrate a partner anally.",
+    "details": "A woman or femme person using a strap-on to penetrate a partner anally. Lube, going slowly and checking in matter, and the person receiving sets the pace.",
+    "related": [
+      "barrier-methods",
+      "lube",
+      "consent",
+      "aftercare"
+    ]
+  },
+  {
+    "id": "age-play",
+    "name": "Age play",
+    "category": "Activities",
+    "short": "Role-play where one or more people take on a different age.",
+    "details": "Role-play where one or more people take on a different age. It is adults only and about headspace and care, not real children.",
+    "related": [
+      "ageplayer",
+      "little",
+      "middle",
+      "roleplay"
+    ],
+    "safetyNote": "Age play is role-play between adults. It never involves real children or minors."
+  },
+  {
+    "id": "munch",
+    "name": "Munch",
+    "category": "Community",
+    "short": "A casual, non-sexual meet-up for kinky people.",
+    "details": "A casual, non-sexual meet-up, usually in a cafe or restaurant. It is the usual first step for newcomers, nothing is expected of you, and you can leave any time.",
+    "related": [
+      "play-party",
+      "dungeon-monitor"
+    ]
+  },
+  {
+    "id": "play-party",
+    "name": "Play party",
+    "category": "Community",
+    "short": "An event where people can do kink together.",
+    "details": "An event where people can do kink together, with rules on consent, privacy and etiquette. Many require vetting or a munch first, and watching is always allowed.",
+    "related": [
+      "munch",
+      "dungeon-monitor"
+    ]
+  },
+  {
+    "id": "dungeon-monitor",
+    "name": "Dungeon monitor",
+    "category": "Community",
+    "short": "A volunteer who keeps a play space safe.",
+    "details": "A volunteer who keeps a play space safe: rules followed, equipment used properly, people looked after. Ask one if you ever feel unsure.",
+    "related": [
+      "play-party"
+    ]
+  },
+  {
+    "id": "dungeon",
+    "name": "Dungeon",
+    "category": "Community",
+    "short": "A venue or room set up for kink play.",
+    "details": "A venue or room set up for kink, with equipment and house rules. Visitors are expected not to touch people or gear without permission.",
+    "related": [
+      "dungeon-monitor",
+      "play-party",
+      "house-rules"
+    ]
+  },
+  {
+    "id": "house-rules",
+    "name": "House rules",
+    "category": "Community",
+    "short": "A venue's written rules on behaviour, consent and safety.",
+    "details": "A venue's expectations about consent, photos, alcohol, hygiene and cleaning up. Reading them first avoids awkward mistakes.",
+    "related": [
+      "dungeon",
+      "dungeon-monitor",
+      "play-party"
+    ]
+  },
+  {
+    "id": "kink-workshop",
+    "name": "Workshop",
+    "category": "Community",
+    "short": "A class where an experienced person teaches a skill.",
+    "details": "A class where an experienced person teaches a skill or topic, from rope basics to negotiation. Learning in person from a good teacher is one of the safest ways to grow.",
+    "related": [
+      "munch",
+      "mentor"
+    ]
+  },
+  {
+    "id": "mentor",
+    "name": "Mentor",
+    "category": "Community",
+    "short": "An experienced person who guides newcomers.",
+    "details": "An experienced person who offers guidance without expecting anything back. Be wary of anyone who pressures you or insists on a sexual relationship.",
+    "related": [
+      "kink-workshop",
+      "munch",
+      "safe-call"
+    ],
+    "safetyNote": "A mentor is not entitled to your time, body or obedience. You can leave at any point."
+  },
+  {
+    "id": "kink-shaming",
+    "name": "Kink shaming",
+    "category": "Community",
+    "short": "Mocking or judging someone for their agreed interests.",
+    "details": "Mocking or judging someone for their agreed interests. It pushes people into secrecy and makes it harder to ask for help.",
+    "related": [
+      "kink",
+      "vanilla"
+    ]
+  },
+  {
+    "id": "code-of-conduct",
+    "name": "Code of conduct",
+    "category": "Community",
+    "short": "A community's agreed standard for how members treat each other.",
+    "details": "A community's agreed standard for how members treat each other, covering consent, harassment, privacy and what happens when rules break.",
+    "related": [
+      "house-rules",
+      "enthusiastic-consent"
+    ]
+  },
+  {
+    "id": "vetting",
+    "name": "Vetting",
+    "category": "Community",
+    "short": "Asking around about someone before you play with them.",
+    "details": "Asking around before you play with someone: past partners, event organisers, or people who know them. A pattern of complaints matters more than one glowing reference.",
+    "related": [
+      "munch",
+      "play-party",
+      "safe-call",
+      "mentor"
+    ],
+    "safetyNote": "Ask more than one person, and take patterns seriously. A good reputation elsewhere does not cancel out a bad experience someone had."
+  },
+  {
+    "id": "safety-shears",
+    "name": "Safety shears",
+    "category": "Gear",
+    "short": "Blunt-tipped scissors for cutting restraints fast.",
+    "details": "Blunt-tipped scissors kept close so restraints can be cut away fast in an emergency. Anyone using rope or tape should know where they are.",
+    "related": [
+      "bondage",
+      "emergency-plan",
+      "rope"
+    ]
+  },
+  {
+    "id": "rope",
+    "name": "Rope",
+    "category": "Gear",
+    "short": "Cord used for tying, such as jute, hemp or a soft synthetic.",
+    "details": "Cord used for tying, often jute, hemp or a softer synthetic. Check it for damage, keep it clean, and learn from a teacher before trying new ties.",
+    "related": [
+      "bondage",
+      "rigger",
+      "ropebottom_ropebunny",
+      "shibari"
+    ],
+    "safetyNote": "Never leave someone tied alone. Watch for numbness, tingling, colour changes or pain in hands and feet, and release immediately if they appear."
+  },
+  {
+    "id": "cuffs",
+    "name": "Cuffs",
+    "category": "Gear",
+    "short": "Wrist or ankle restraints, usually padded and adjustable.",
+    "details": "Wrist or ankle restraints, usually padded and adjustable. They should be snug but not pinching, with a quick release.",
+    "related": [
+      "bondage",
+      "safety-shears"
+    ],
+    "safetyNote": "Check circulation regularly, and never suspend a person's body weight from cuffs made for light restraint."
+  },
+  {
+    "id": "blindfold",
+    "name": "Blindfold",
+    "category": "Gear",
+    "short": "An eye covering that heightens other senses.",
+    "details": "A covering over the eyes so touch, sound and anticipation feel stronger. Agree beforehand how it comes off and how to signal if it is too much.",
+    "related": [
+      "sensory-play",
+      "check-in"
+    ]
+  },
+  {
+    "id": "flogger",
+    "name": "Flogger",
+    "category": "Gear",
+    "short": "An impact tool with many soft tails.",
+    "details": "An impact tool with many soft tails. Sensation depends on the material and tail shape, so start soft and stay on fleshy areas.",
+    "related": [
+      "impact-play",
+      "paddle"
+    ],
+    "safetyNote": "Avoid the kidneys, spine, neck, joints and any bony area."
+  },
+  {
+    "id": "paddle",
+    "name": "Paddle",
+    "category": "Gear",
+    "short": "A flat tool for spanking and impact play.",
+    "details": "A flat tool for spanking and impact play, in wood, leather, silicone and more. Start light and build up slowly.",
+    "related": [
+      "impact-play",
+      "spanking",
+      "flogger"
+    ],
+    "safetyNote": "Aim only for padded areas such as the buttocks and thighs."
+  },
+  {
+    "id": "first-aid-kit",
+    "name": "Play first-aid kit",
+    "category": "Gear",
+    "short": "Basic supplies kept on hand for minor injuries.",
+    "details": "Antiseptic, bandages, gloves, ice packs, water and snacks, kept nearby. Many play spaces have one, but it is worth having your own at home.",
+    "related": [
+      "emergency-plan",
+      "aftercare"
+    ]
+  },
+  {
+    "id": "gag",
+    "name": "Gag",
+    "category": "Gear",
+    "short": "Something that fills or covers the mouth and limits speech.",
+    "details": "Something that fills or covers the mouth and limits speech. Agree a non-verbal signal first, never leave someone gagged alone, and watch their breathing.",
+    "related": [
+      "bondage",
+      "breath-play",
+      "safeword",
+      "blindfold"
+    ],
+    "safetyNote": "Never gag someone with a blocked nose, never leave them alone, and never use anything that can be swallowed or block the airway."
+  },
+  {
+    "id": "nipple-clamps",
+    "name": "Nipple clamps",
+    "category": "Gear",
+    "short": "Clamps worn on the nipples for pressure and sensation.",
+    "details": "Clamps worn on the nipples for pressure and sensation. Start loose, take them off slowly, and check colour and feeling while they are on.",
+    "related": [
+      "nipple-play",
+      "sensory-play",
+      "temperature-play",
+      "check-in"
+    ],
+    "safetyNote": "Keep sessions short, never clamp so tight that the skin goes numb or white, and check circulation."
+  },
+  {
+    "id": "crop",
+    "name": "Crop",
+    "category": "Gear",
+    "short": "A short flexible whip with a flat tip.",
+    "details": "A short flexible whip with a flat tip, used for stinging impact. Aim for fleshy areas and build up slowly.",
+    "related": [
+      "impact-play",
+      "spanking",
+      "cane",
+      "paddle"
+    ],
+    "safetyNote": "Avoid the face, neck, spine, joints and genitals."
+  },
+  {
+    "id": "cane",
+    "name": "Cane",
+    "category": "Gear",
+    "short": "A thin rod used for sharp, stinging impact.",
+    "details": "A thin rod used for sharp, stinging impact. It marks easily, so agree on marks first and stay away from joints and the lower back.",
+    "related": [
+      "impact-play",
+      "spanking",
+      "crop",
+      "flogger"
+    ],
+    "safetyNote": "Canes can split skin. Start light, check the skin as you go, and stop at any broken skin."
+  },
+  {
+    "id": "leash",
+    "name": "Leash",
+    "category": "Gear",
+    "short": "A lead clipped to a collar or harness.",
+    "details": "A lead clipped to a collar or harness for pet play or power exchange. Never pull on the neck, and use a clip that releases under pressure.",
+    "related": [
+      "pet-play",
+      "collar",
+      "pet",
+      "bondage"
+    ],
+    "safetyNote": "Keep slack in the lead, never lift or pull on the neck, and use a breakaway clip."
+  },
+  {
+    "id": "spreader-bar",
+    "name": "Spreader bar",
+    "category": "Gear",
+    "short": "A bar that holds the ankles or wrists apart.",
+    "details": "A bar that holds the ankles or wrists apart. Keep sessions short, pad the hard points and check circulation.",
+    "related": [
+      "bondage",
+      "cuffs",
+      "rope",
+      "safety-shears"
+    ],
+    "safetyNote": "Lying still for a long time is hard on joints. Keep it short, pad well, and release at the first sign of cramp or numbness."
+  },
+  {
+    "id": "lube",
+    "name": "Lube",
+    "category": "Gear",
+    "short": "Lubricant that reduces friction and tearing.",
+    "details": "Lubricant reduces friction and tearing. Water-based works with every condom and toy, while silicone lasts longer but damages silicone toys.",
+    "related": [
+      "barrier-methods",
+      "toy-hygiene",
+      "pegging",
+      "consent"
+    ]
+  },
+  {
+    "id": "sexual",
+    "name": "Sexual",
+    "category": "Categories",
+    "short": "Kink that is part of sex or arousal.",
+    "details": "Kink that is part of sex or arousal. Most people are a mix of sexual and non-sexual kink, and where an interest sits can change over time.",
+    "draft": true
+  },
+  {
+    "id": "non-sexual",
+    "name": "Non-sexual",
+    "category": "Categories",
+    "short": "Kink enjoyed for its own sake, without sex.",
+    "details": "Kink enjoyed for its own sake: the ritual, the headspace, the craft or the company. A scene without sex can still feel close and intense.",
+    "draft": true
+  },
+  {
+    "id": "lifestyle_kink",
+    "name": "Lifestyle Kink",
+    "category": "Categories",
+    "short": "Kink that runs through everyday life, not just scenes.",
+    "details": "Kink that runs through everyday life instead of staying in scheduled scenes: rules, titles, rituals or a power exchange that keeps going between sessions.\n\nLifestyle is a spectrum. Some people live a dynamic all day, others keep a few rituals. Because it touches work, family and money, it needs more talking, not less.",
+    "draft": true
+  },
+  {
+    "id": "agender",
+    "details": "Someone who does not have a gender. It sits under the non-binary umbrella, but many non-binary people do have a gender.",
+    "related": []
+  },
+  {
+    "id": "androgynous",
+    "details": "A look or identity that blends masculine and feminine. It can be a style someone enjoys or a gender label they use."
+  },
+  {
+    "id": "bi_gender",
+    "details": "Someone who has two genders, together or at different times. It is about identity, not who they are attracted to."
+  },
+  {
+    "id": "butch",
+    "details": "A masculine gender expression with roots in lesbian and queer communities. For many people it is an identity of its own, not acting like a man."
+  },
+  {
+    "id": "crossdresser",
+    "details": "Someone who enjoys wearing clothes linked to another gender in everyday life. On its own it says nothing about who they are attracted to."
+  },
+  {
+    "id": "drag",
+    "details": "Performing an exaggerated gender for an audience. Drag is costume and craft, and it does not describe the performer's own gender."
+  },
+  {
+    "id": "female",
+    "details": "A sex category, usually assigned at birth. People use the word for biology and for gender, and the two do not always match."
+  },
+  {
+    "id": "woman",
+    "details": "Someone who identifies and lives as a woman. Trans women are women."
+  },
+  {
+    "id": "femme",
+    "details": "A feminine identity or presentation, often claimed in queer communities. It does not decide who leads in a scene."
+  },
+  {
+    "id": "gender_fluid",
+    "details": "Someone whose gender shifts over time. Follow the name and pronouns they use now rather than the first ones you learned."
+  },
+  {
+    "id": "genderqueer",
+    "details": "A gender outside the man and woman binary. Some describe a blend, some a third gender, some none at all."
+  },
+  {
+    "id": "intersex",
+    "details": "Born with sex traits that do not fit typical male or female definitions. It describes biology, not gender identity or kink."
+  },
+  {
+    "id": "male",
+    "details": "A sex category, usually assigned at birth. Like female, the word gets used for biology and for gender."
+  },
+  {
+    "id": "man",
+    "details": "Someone who identifies and lives as a man. Trans men are men."
+  },
+  {
+    "id": "non_binary",
+    "details": "A gender that is not only man or woman. It may be a blend, a third gender, or no gender at all."
+  },
+  {
+    "id": "trans_man",
+    "details": "A man who was assigned female at birth. Transition looks different for everyone, and nobody owes anyone a medical history."
+  },
+  {
+    "id": "trans_woman",
+    "details": "A woman who was assigned male at birth. What matters in play is what she says about her body, not assumptions about it."
+  },
+  {
+    "id": "transgender",
+    "details": "Someone whose gender differs from the sex they were assigned at birth. Being trans is identity, not a kink or a role."
+  },
+  {
+    "id": "two_spirit",
+    "details": "An identity used by some Indigenous North American peoples that blends masculine and feminine. It belongs to those cultures and is not a general word for queer."
+  },
+  {
+    "id": "asexual",
+    "details": "Someone who feels little or no sexual attraction. Asexual people can still have relationships, libido, kinks and sex."
+  },
+  {
+    "id": "bicurious",
+    "details": "Curious about sex with the same gender, without calling yourself bisexual. Curiosity does not need a label."
+  },
+  {
+    "id": "bisexual",
+    "details": "Attracted to more than one gender. It does not require equal attraction or experience."
+  },
+  {
+    "id": "demisexual",
+    "details": "Attraction only appears after a strong emotional bond. It is about attraction, not waiting or low libido."
+  },
+  {
+    "id": "fluctuating",
+    "details": "Attraction that changes over time, in strength or in who it is aimed at."
+  },
+  {
+    "id": "gay",
+    "details": "A man attracted to men, or an umbrella word for same-gender attraction. It says nothing about role or presentation."
+  },
+  {
+    "id": "greysexual",
+    "details": "Attraction that is rare or only happens in specific situations. It sits between asexual and sexual."
+  },
+  {
+    "id": "heteroflexible",
+    "details": "Mostly straight, with occasional same-gender attraction. It describes how attraction feels, not what someone has done."
+  },
+  {
+    "id": "homoflexible",
+    "details": "Mostly gay or lesbian, with occasional attraction to another gender. Neither word is more accurate than bisexual."
+  },
+  {
+    "id": "lesbian",
+    "details": "A woman attracted to women. Some non-binary and queer people use the word too."
+  },
+  {
+    "id": "pansexual",
+    "details": "Attracted to people of any gender. Pan and bi overlap, and neither means being attracted to everyone."
+  },
+  {
+    "id": "queer",
+    "details": "An umbrella word for people who are not straight or cisgender. Some people still find it painful, so use it for yourself unless you know someone welcomes it."
+  },
+  {
+    "id": "sapiosexual",
+    "details": "Attraction that centres on intelligence. It is usually used alongside another orientation."
+  },
+  {
+    "id": "straight",
+    "details": "Attracted to the opposite gender. The word assumes a binary, so it does not fit everyone."
+  },
+  {
+    "id": "ageplayer",
+    "details": "Someone who takes on a different age in role-play. Agree what the age means, what care looks like, and how to step out of it.",
+    "related": [],
+    "safetyNote": "Age play is role-play between adults. It never involves real children or minors."
+  },
+  {
+    "id": "babyboy",
+    "details": "A young-boy role in age play, or a loving name for a male submissive. Either way, the care and limits are agreed up front."
+  },
+  {
+    "id": "babygirl",
+    "details": "A young-girl role in age play, or a loving name for a female submissive. Either way, the care and limits are agreed up front."
+  },
+  {
+    "id": "big",
+    "details": "The caring, grown-up partner in an age-play dynamic. It can be a title or just a description, and it does not require dominance."
+  },
+  {
+    "id": "bootblack",
+    "details": "Someone who cleans and polishes boots as a craft and a service in the leather community. How sexual or ceremonial it is depends on the people."
+  },
+  {
+    "id": "bootlicker",
+    "details": "Someone who enjoys kissing, licking or shining boots. Only clean boots, and only with the wearer's agreement."
+  },
+  {
+    "id": "bottom",
+    "details": "The person who receives the action in a scene. Bottoming is not the same as submitting, and a bottom can be the one in charge."
+  },
+  {
+    "id": "brat",
+    "details": "A submissive who teases and pushes back playfully to get a reaction. It only works when both people enjoy the game and know what is off-limits."
+  },
+  {
+    "id": "bull",
+    "details": "A man who has sex with a woman whose partner enjoys watching or knowing. Condoms, honesty and clear rules matter."
+  },
+  {
+    "id": "cougar",
+    "details": "An older woman who prefers younger men. It describes an age preference, not a kink role, and everyone involved is an adult."
+  },
+  {
+    "id": "cuckold",
+    "details": "A man who enjoys his partner having sex with other people. It is a negotiated arrangement with rules about who, when and what is shared."
+  },
+  {
+    "id": "cuckoldress",
+    "details": "A woman who takes other partners with her partner's full knowledge and consent. Both people agree what gets shared."
+  },
+  {
+    "id": "daddy",
+    "details": "A caring, protective or in-charge title in a dynamic. It has nothing to do with real family or children."
+  },
+  {
+    "id": "disciplinarian",
+    "details": "Someone who sets rules and agreed consequences for a partner. The rules and the consequences are decided together."
+  },
+  {
+    "id": "doll",
+    "details": "Someone who enjoys being dressed and treated like a living doll. It can be about fantasy, looks, or giving up decisions for a while."
+  },
+  {
+    "id": "dominant",
+    "details": "The partner who leads, by agreement. A good dominant listens, stays calm and looks after the person they are leading. The control is given, not taken.",
+    "related": [
+      "submissive",
+      "ds",
+      "switch"
+    ]
+  },
+  {
+    "id": "domme",
+    "details": "A woman or feminine person who takes agreed control in a dynamic. The authority is given, limited and can be withdrawn."
+  },
+  {
+    "id": "drag_king",
+    "details": "A performer who plays an exaggerated masculine character. Drag is separate from gender identity and from kink."
+  },
+  {
+    "id": "drag_queen",
+    "details": "A performer who plays an exaggerated feminine character. Performing a gender says nothing about the performer's own identity."
+  },
+  {
+    "id": "evolving",
+    "details": "Someone whose kinks or role are still changing. It does not mean new, and it does not commit to a label."
+  },
+  {
+    "id": "exhibitionist",
+    "details": "Someone who enjoys being watched by willing people. Exposing yourself to people who did not agree is harassment, not a kink."
+  },
+  {
+    "id": "exploring",
+    "details": "Someone trying out kink without claiming a fixed label yet. Going slowly, and deciding something is not for you, are both fine."
+  },
+  {
+    "id": "fetishist",
+    "details": "Someone aroused by a specific object, material or body part. Fetishes are common and do not replace consent."
+  },
+  {
+    "id": "furry",
+    "details": "Someone who enjoys animal characters, art or fursuits. The fandom is mostly creative and social; pet play is a different thing."
+  },
+  {
+    "id": "handler",
+    "details": "The leading partner in a pet-play dynamic. Handling is more about routine, attention and rewards than punishment."
+  },
+  {
+    "id": "hedonist",
+    "details": "Someone who puts pleasure at the centre of their life. It can shape how someone plays, and it still runs on consent."
+  },
+  {
+    "id": "hotwife",
+    "details": "A married woman who takes other partners with her husband's knowledge and support. It only works when both people truly want it."
+  },
+  {
+    "id": "kajira",
+    "details": "A female slave in the fictional world of the Gor novels. Some people borrow the language for role-play, and it carries no real ownership."
+  },
+  {
+    "id": "kajirus",
+    "details": "A male slave in the fictional world of the Gor novels. Using Gor language is a niche role-play choice with contested gender politics."
+  },
+  {
+    "id": "kitten",
+    "details": "Someone who takes on a kitten role in pet play: playful, curious and often cuddly. Agree what the headspace includes and how to come out of it."
+  },
+  {
+    "id": "leather_bottom",
+    "details": "Someone in the leather tradition who receives the action. The role carries standing and skill, not lesser status."
+  },
+  {
+    "id": "leather_daddy",
+    "details": "A respected, fatherly authority figure in the leather community. The title is earned through experience and care for others."
+  },
+  {
+    "id": "leather_mommy",
+    "details": "A respected, motherly authority figure in the leather community. The title usually comes with teaching and looking after people."
+  },
+  {
+    "id": "leather_top",
+    "details": "Someone in the leather tradition who gives the action. Tops carry responsibility for limits, safety and first aid."
+  },
+  {
+    "id": "leatherbaby",
+    "details": "A dependent, childlike role in the leather tradition. Keep the person's adult independence intact outside the scene."
+  },
+  {
+    "id": "leatherboy",
+    "details": "A submissive in the leather tradition, often looking for a mentor. The role is about service and learning, not weakness."
+  },
+  {
+    "id": "leathergirl",
+    "details": "A submissive in the leather tradition, often looking for a mentor. The amount of authority given is agreed explicitly."
+  },
+  {
+    "id": "little",
+    "details": "Someone who takes on a childlike headspace, with or without power exchange. It can be sexual or completely non-sexual.",
+    "safetyNote": "Age play is role-play between adults. It never involves real children or minors."
+  },
+  {
+    "id": "masochist",
+    "details": "Someone who enjoys receiving pain or humiliation by agreement. The person receiving it decides where the line is."
+  },
+  {
+    "id": "master_mistress",
+    "details": "Someone who takes agreed ownership of a partner. It is a title of responsibility, not a legal claim, and it can end at any time."
+  },
+  {
+    "id": "middle",
+    "details": "Someone who takes on a teen or pre-teen headspace. It often looks more like guidance than parenting.",
+    "safetyNote": "Age play is role-play between adults. It never involves real children or minors."
+  },
+  {
+    "id": "mommy",
+    "details": "A caring, protective or in-charge title in a dynamic. Like daddy, it is about care and authority, not real family."
+  },
+  {
+    "id": "pet",
+    "details": "Someone cared for and treated as a beloved pet, sometimes on a lead or in a crate. Agree on a signal for distress, since speech may be hard."
+  },
+  {
+    "id": "pony",
+    "details": "Someone who takes on a pony or horse role, often with tack and routines. Gear that blocks sight or speech needs a non-verbal signal and supervision."
+  },
+  {
+    "id": "primal",
+    "details": "Someone who plays from instinct rather than rules or titles: wrestling, chasing, growling, biting. It still runs on agreed limits."
+  },
+  {
+    "id": "primal_predator",
+    "details": "A primal who enjoys the chase and catching their partner. Agree limits around marks, restraint and breath, and a way to stop."
+  },
+  {
+    "id": "primal_prey",
+    "details": "A primal who enjoys being chased and caught. You need a signal that works while running or being held."
+  },
+  {
+    "id": "princess",
+    "details": "A role that asks for plenty of praise, care and attention. It works when the other person enjoys giving it and either of them can say no."
+  },
+  {
+    "id": "pup",
+    "details": "Someone who takes on a puppy role: playful, loyal and often social. Handlers and pups agree commands, gear and how to come out of headspace."
+  },
+  {
+    "id": "rigger",
+    "details": "Someone who ties people up, usually with rope. Riggers need to know anatomy, keep safety shears close and check circulation."
+  },
+  {
+    "id": "ropebottom_ropebunny",
+    "details": "The person being tied. Numbness, tingling or cold means stop at once."
+  },
+  {
+    "id": "rope_top",
+    "details": "The person tying in rope bondage. Skill matters more than speed, and most people learn in person."
+  },
+  {
+    "id": "sadist",
+    "details": "Someone who enjoys giving pain or humiliation by agreement. The other person's limits define the scene."
+  },
+  {
+    "id": "sadomasochist",
+    "details": "Someone who enjoys both giving and receiving pain or humiliation. Headspace feels very different on each side, so negotiate each scene."
+  },
+  {
+    "id": "sensualist",
+    "details": "Someone who focuses on touch, texture, temperature and sound rather than pain or power. It is a gentle way into kink."
+  },
+  {
+    "id": "sissy",
+    "details": "A man who takes on a feminised role, often with humiliation. The fantasy leans on stereotypes, so say what is wanted and what actually hurts."
+  },
+  {
+    "id": "slave",
+    "details": "Someone who agrees to give broad control to a partner. It is a chosen structure with limits and a way out, not legal ownership."
+  },
+  {
+    "id": "slut",
+    "details": "A reclaimed word for someone who embraces their own desires. Some people love it and some find it hurtful, so follow their lead."
+  },
+  {
+    "id": "spankee",
+    "details": "Someone who enjoys being spanked. Agree on intensity, implements and where marks are okay before you start."
+  },
+  {
+    "id": "spanker",
+    "details": "Someone who enjoys spanking others. Spankers set the pace, check the skin and watch for real distress."
+  },
+  {
+    "id": "spanko",
+    "details": "Someone with a strong interest in spanking, giving or receiving. It says nothing about who leads outside that interest."
+  },
+  {
+    "id": "submissive",
+    "details": "The partner who hands over some control, by choice. Submissives are expected to speak up about needs and limits.",
+    "related": [
+      "dominant",
+      "ds"
+    ]
+  },
+  {
+    "id": "swinger",
+    "details": "Someone in a couple who has agreed sex with others, often together. Honesty between partners is the whole foundation."
+  },
+  {
+    "id": "switch",
+    "details": "Someone who takes either the leading or following role. It can change with the partner, the mood or the scene.",
+    "related": [
+      "dominant",
+      "submissive"
+    ]
+  },
+  {
+    "id": "top",
+    "details": "The person who gives the action in a scene: tying, spanking, flogging. Topping does not require dominance."
+  },
+  {
+    "id": "toy",
+    "details": "A role where someone is used and played with like an object. The fantasy often means not speaking up, so clear limits and a check-in afterwards matter."
+  },
+  {
+    "id": "vanilla",
+    "details": "A neutral word for people or sex without kink. Many people enjoy both.",
+    "related": [
+      "kink"
+    ]
+  },
+  {
+    "id": "voyeur",
+    "details": "Someone who enjoys watching others, with their consent. Watching people who have not agreed is a crime, not a kink."
+  }
+]

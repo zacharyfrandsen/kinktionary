@@ -168,7 +168,6 @@ class _ColorPickerSheetState extends State<_ColorPickerSheet> {
               prefixText: '#',
               labelText: 'Hex',
               counterText: '',
-              border: OutlineInputBorder(),
             ),
             onChanged: (value) {
               final parsed = colorFromHex(value);

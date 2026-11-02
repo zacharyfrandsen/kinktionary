@@ -11,6 +11,13 @@ abstract final class AppPalette {
   static const text = Color(0xFFEDE7F3);
   static const textMuted = Color(0xFFBFB3CC);
 
+  /// Near-black surface for definition and safety cards: dark enough that the
+  /// patterned wallpaper can't show through the body text.
+  static const card = Color(0xFF0A0810);
+
+  /// Reserved for safety notes, so the warning colour means one thing.
+  static const safety = Color(0xFFFFEE00);
+
   static const orchid = Color(0xFFD6A1FF);
   static const orchidContainer = Color(0xFF4F2A72);
   static const rose = Color(0xFFF6C9E6);
@@ -19,7 +26,40 @@ abstract final class AppPalette {
   static const amberContainer = Color(0xFF4A3818);
 }
 
+/// Screens are transparent, drawn over the app's single wallpaper, so a
+/// cross-fade shows the outgoing and the incoming screen mixed together — two
+/// sets of cards and headings ghosting through each other. Screens swap
+/// instantly instead, which is also what the tab switches already do.
+class _InstantPageTransitionsBuilder extends PageTransitionsBuilder {
+  const _InstantPageTransitionsBuilder();
+
+  @override
+  Widget buildTransitions<T>(
+    PageRoute<T> route,
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) =>
+      child;
+}
+
 abstract final class AppTheme {
+  /// One radius for every text box in the app, matching the rounded swatch in
+  /// the accent-colour picker.
+  static const fieldRadius = 12.0;
+
+  static const _transitions = PageTransitionsTheme(
+    builders: {
+      TargetPlatform.android: _InstantPageTransitionsBuilder(),
+      TargetPlatform.iOS: _InstantPageTransitionsBuilder(),
+      TargetPlatform.macOS: _InstantPageTransitionsBuilder(),
+      TargetPlatform.windows: _InstantPageTransitionsBuilder(),
+      TargetPlatform.linux: _InstantPageTransitionsBuilder(),
+      TargetPlatform.fuchsia: _InstantPageTransitionsBuilder(),
+    },
+  );
+
   static Color _on(Color c) =>
       c.computeLuminance() > 0.45 ? const Color(0xFF1A1020) : Colors.white;
 
@@ -66,6 +106,17 @@ abstract final class AppTheme {
           displayColor: scheme.onSecondaryContainer,
         );
     final titles = scheme.onSecondaryContainer;
+    // The selected destination's icon and its outline share this colour, so
+    // the pill never looks like a different accent from the icon inside it.
+    final navIcon = scheme.onSecondaryContainer;
+    final fieldShape = RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(fieldRadius),
+    );
+    OutlineInputBorder fieldBorder(Color color, [double width = 1]) =>
+        OutlineInputBorder(
+          borderRadius: BorderRadius.circular(fieldRadius),
+          borderSide: BorderSide(color: color, width: width),
+        );
     final textTheme = base.copyWith(
       headlineLarge: base.headlineLarge?.copyWith(color: titles),
       headlineMedium: base.headlineMedium?.copyWith(color: titles),
@@ -108,9 +159,18 @@ abstract final class AppTheme {
         side: BorderSide(color: scheme.outlineVariant),
         labelStyle: textTheme.labelLarge,
       ),
+      // Every text box shares one shape, fill and border, so fields built in
+      // different screens look like the same control.
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: scheme.surfaceContainerLow.withAlpha(0xE6),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+        border: fieldBorder(scheme.outlineVariant),
+        enabledBorder: fieldBorder(scheme.outlineVariant),
+        disabledBorder: fieldBorder(scheme.outlineVariant),
+        focusedBorder: fieldBorder(scheme.primary, 1.6),
+        errorBorder: fieldBorder(scheme.error),
+        focusedErrorBorder: fieldBorder(scheme.error, 1.6),
       ),
       searchBarTheme: SearchBarThemeData(
         backgroundColor: WidgetStatePropertyAll(
@@ -118,12 +178,27 @@ abstract final class AppTheme {
         ),
         elevation: const WidgetStatePropertyAll(0),
         side: WidgetStatePropertyAll(BorderSide(color: scheme.outlineVariant)),
+        shape: WidgetStatePropertyAll(fieldShape),
       ),
       dividerTheme: DividerThemeData(color: scheme.outlineVariant),
+      pageTransitionsTheme: _transitions,
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: scheme.surface.withAlpha(0xE6),
         surfaceTintColor: Colors.transparent,
-        indicatorColor: scheme.primaryContainer,
+        // An outlined pill reads calmer than a filled one and keeps the label
+        // legible when the accent colour is pale.
+        indicatorColor: Colors.transparent,
+        indicatorShape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(18),
+          side: BorderSide(color: navIcon, width: 1.4),
+        ),
+        iconTheme: WidgetStateProperty.resolveWith(
+          (states) => IconThemeData(
+            color: states.contains(WidgetState.selected)
+                ? navIcon
+                : scheme.onSurfaceVariant,
+          ),
+        ),
         labelTextStyle: WidgetStateProperty.resolveWith(
           (states) => TextStyle(
             color: states.contains(WidgetState.selected)

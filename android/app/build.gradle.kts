@@ -4,6 +4,7 @@ val keyProperties = Properties().apply {
     val file = rootProject.file("key.properties")
     if (file.exists()) file.inputStream().use { load(it) }
 }
+val phoneTestSigning = project.hasProperty("phoneTestSigning")
 
 plugins {
     id("com.android.application")
@@ -50,15 +51,42 @@ android {
         }
     }
 
+    // tools/install_phone.sh sets this so the phone test APK is signed with the
+    // local debug key and can update a sideloaded install in place. Play builds
+    // never set it and keep using the release key.
     buildTypes {
         release {
-            // Falls back to debug keys when key.properties is absent (e.g. a fresh clone).
-            signingConfig = if (keyProperties.containsKey("storeFile")) {
-                signingConfigs.getByName("release")
-            } else {
+            signingConfig = if (phoneTestSigning) {
                 signingConfigs.getByName("debug")
+            } else {
+                signingConfigs.getByName("release")
             }
         }
+    }
+}
+
+val validateReleaseSigning by tasks.registering {
+    doLast {
+        val requiredProperties = listOf(
+            "storeFile",
+            "storePassword",
+            "keyAlias",
+            "keyPassword",
+        )
+        val missingProperties = requiredProperties.filter {
+            keyProperties.getProperty(it).isNullOrBlank()
+        }
+        if (!phoneTestSigning && missingProperties.isNotEmpty()) {
+            throw GradleException(
+                "Release signing is not configured. Missing: ${missingProperties.joinToString()}",
+            )
+        }
+    }
+}
+
+tasks.configureEach {
+    if (name.contains("Release", ignoreCase = true) && name != "validateReleaseSigning") {
+        dependsOn(validateReleaseSigning)
     }
 }
 
